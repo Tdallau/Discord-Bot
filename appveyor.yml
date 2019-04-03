@@ -1,0 +1,12 @@
+version: 1.0.{build}
+image: Visual Studio Code
+skip_tags: true
+dotnet_csproj:
+  patch: true
+  file: '**\*.csproj'
+  version: '{version}'
+  package_version: '{version}'
+build_script:
+  - dotnet build -c Release
+test_script:
+  - dotnet test discordBot.xUnit.Tests/DiscordBot.xUnit.Tests.csproj
