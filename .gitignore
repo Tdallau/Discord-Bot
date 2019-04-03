@@ -3,8 +3,8 @@
 */obj/
 DiscordBot/config/
 
-
-#DiscordBot
+# MacOs
+.DS_Store
 
 # VSCode
 .vscode/
