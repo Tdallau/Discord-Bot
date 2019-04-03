@@ -1,0 +1,10 @@
+# DiscordBot
+*/bin/
+*/obj/
+DiscordBot/config/
+
+
+#DiscordBot
+
+# VSCode
+.vscode/
