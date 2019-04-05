@@ -28,6 +28,7 @@ namespace DiscordBot
             _container = new UnityContainer();
             _container.RegisterSingleton<IDataStorage, JsonStorage>();
             _container.RegisterSingleton<ILogger, Logger>();
+            _container.RegisterSingleton<IAzureService, AzureService>();
             _container.RegisterFactory<DiscordSocketConfig>(_ => SocketConfig.GetDefault());
             _container.RegisterSingleton<DiscordSocketClient>(new InjectionConstructor(typeof(DiscordSocketConfig)));
             _container.RegisterSingleton<discord.Connection>();
